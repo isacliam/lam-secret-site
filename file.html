@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Tải File</title>
+  <script>
+    function checkPassword() {
+      var pass = prompt("Nhập mật khẩu để xem link tải:");
+      if (pass === "asdfghjkl123456789987654321") {
+        document.getElementById("protected").style.display = "block";
+      } else {
+        alert("Sai mật khẩu! Không thể truy cập.");
+      }
+    }
+  </script>
+</head>
+<body onload="checkPassword()" style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
+  <h2>🔒 File này được bảo vệ bằng mật khẩu</h2>
+  <div id="protected" style="display: none;">
+    <p><strong>✅ Mật khẩu đúng! Nhấn vào nút dưới để tải:</strong></p>
+    <a href="50b7ee7f-c0bc-4b9e-aa84-8b4ea571b17d.py" download style="padding: 10px 20px; background: #4CAF50; color: white; border-radius: 5px; text-decoration: none;">📥 Tải file .py</a>
+  </div>
+</body>
+</html>
